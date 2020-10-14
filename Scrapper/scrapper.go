@@ -40,3 +40,20 @@ func ScrapeContent(args []string, options []string) {
 	log.Printf("stock scanner type received is %d \n", stockScannerType)
 
 	// sets required stockScannerType in params for URL encoding from command line argument
+	if types.BULLISH == stockScannerType {
+		log.Printf("creating bullish stock scanner object")
+		params.Set("json", bullishStocksScanner)
+	} else {
+		log.Printf("creating bearish stock scanner object")
+		params.Set("json", bearishStocksScanner)
+	}
+	value := params.Encode()
+	/*log.Println("received encoded string is : ", value)*/
+
+	err, htmlOutput := requests.CreateAPIRequestAndGetResponse(value, client)
+	if err != nil {
+		log.Panic("error while creating API request or while reading response")
+	}
+	//log.Println("****************************************************")
+	//log.Printf("response : %+v \n", htmlOutput)
+	log.Println("****************************************************")
