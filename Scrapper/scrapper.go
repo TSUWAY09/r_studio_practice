@@ -57,3 +57,20 @@ func ScrapeContent(args []string, options []string) {
 	//log.Println("****************************************************")
 	//log.Printf("response : %+v \n", htmlOutput)
 	log.Println("****************************************************")
+
+	htmlTokens := html.NewTokenizer(strings.NewReader(htmlOutput))
+
+	// outputs bullish or bearish based on the stockScannerType
+	if types.BULLISH == stockScannerType {
+		log.Println("*******************BULLISH STOCKS*******************")
+	} else {
+		log.Println("*******************BEARISH STOCKS*******************")
+	}
+	log.Println("****************************************************")
+
+	var stocksData [][]string // holds data for both rows and columns when written to csv file
+	var rowData []string      // holds data for each row
+	i := 0
+	for i < 1 {
+
+		tt := htmlTokens.Next()
