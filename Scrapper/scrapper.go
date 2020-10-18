@@ -74,3 +74,24 @@ func ScrapeContent(args []string, options []string) {
 	for i < 1 {
 
 		tt := htmlTokens.Next()
+		//fmt.Printf("%T", tt)
+		switch tt {
+		case html.ErrorToken:
+			//fmt.Println("End")
+			i++
+		case html.TextToken:
+			//fmt.Println(tt.String())
+		case html.StartTagToken:
+
+			t := htmlTokens.Token()
+
+			// if a new row tag is found enter and starting reading each column tag present
+			isRow := t.Data == "tr"
+			if isRow {
+				//log.Printf("\n \n")
+				if len(rowData) > 0 {
+
+					stocksData = append(stocksData, rowData) //appending new row data to double array
+					rowData = make([]string, 0)
+				} else {
+					rowData = make([]string, 0)
