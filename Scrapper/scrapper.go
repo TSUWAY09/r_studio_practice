@@ -132,3 +132,19 @@ func ScrapeContent(args []string, options []string) {
 
 	if ok := filters.IsValuePresentInStringSlice("s", options); ok { // if simple option given in command line filter out data
 		filteredData := filters.FilterSimpleTechnicalValues(stocksData)
+		WriteData(selections, stockScannerType, filteredData)
+
+	} else { // if simple option is not provided in command line write all data
+		WriteData(selections, stockScannerType, stocksData)
+	}
+
+	if err != nil {
+		log.Panic("not able to write to csv file error while writing to csv file")
+	}
+}
+
+/*
+WriteData - writes data to different outputs based on command line argument
+*/
+func WriteData(selections map[string]string, stockScannerType int, filteredData [][]string) {
+	if val, ok := selections["o"]; ok {
