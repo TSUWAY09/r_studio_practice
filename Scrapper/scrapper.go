@@ -119,3 +119,16 @@ func ScrapeContent(args []string, options []string) {
 
 				//log.Printf(" | "+strings.ReplaceAll(eg.String(), "&lt;\\/td&gt;", ""))
 				actualString := filters.ReplaceUnnecessaryHtmlData(eg)
+				if actualString != "" {
+					rowData = append(rowData, actualString)
+				}
+			}
+		}
+	}
+
+	if err != nil {
+		log.Panic("error while creating csv file check for errors while creating")
+	}
+
+	if ok := filters.IsValuePresentInStringSlice("s", options); ok { // if simple option given in command line filter out data
+		filteredData := filters.FilterSimpleTechnicalValues(stocksData)
