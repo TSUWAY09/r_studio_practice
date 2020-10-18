@@ -95,3 +95,27 @@ func ScrapeContent(args []string, options []string) {
 					rowData = make([]string, 0)
 				} else {
 					rowData = make([]string, 0)
+				}
+
+				_ = htmlTokens.Next() // navigate to next html token
+				td := htmlTokens.Token()
+				isAnchor := td.Data == "td" // check if current html tag is td
+
+				if isAnchor { // if it is <td> tag then go ahead and extract data present inside <td>
+					_ = htmlTokens.Next()
+					eg := htmlTokens.Token()
+					// getting data from <td> tag
+					//log.Printf(strconv.Itoa(index) + "." +strings.ReplaceAll(eg.String(), "&lt;\\/td&gt;", ""))
+					actualString := filters.ReplaceUnnecessaryHtmlData(eg)
+					if actualString != "" {
+						rowData = append(rowData, actualString)
+					}
+				}
+				index++
+				//for each column tag td present ger data present inside td tag and add it to th e string slice
+			} else if t.Data == "td" {
+				_ = htmlTokens.Next()
+				eg := htmlTokens.Token()
+
+				//log.Printf(" | "+strings.ReplaceAll(eg.String(), "&lt;\\/td&gt;", ""))
+				actualString := filters.ReplaceUnnecessaryHtmlData(eg)
