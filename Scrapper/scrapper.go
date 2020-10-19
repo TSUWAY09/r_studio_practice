@@ -148,3 +148,14 @@ WriteData - writes data to different outputs based on command line argument
 */
 func WriteData(selections map[string]string, stockScannerType int, filteredData [][]string) {
 	if val, ok := selections["o"]; ok {
+		if val == "table" {
+			WriteAsTable(filteredData, os.Stdout)
+		} else if val == "file" {
+			csvFile, err := fileio.CreateCSVFile(stockScannerType)
+			if err != nil {
+				log.Panic("failed while creating csvfile ", err)
+			}
+			err = fileio.WriteCSVFile(csvFile, filteredData)
+			if err != nil {
+				log.Panic("error occured while writing to file ", err)
+			}
