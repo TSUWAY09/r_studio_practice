@@ -159,3 +159,22 @@ func WriteData(selections map[string]string, stockScannerType int, filteredData 
 			if err != nil {
 				log.Panic("error occured while writing to file ", err)
 			}
+		} else if val == "mail" {
+			SendAsMail(filteredData)
+		}
+	}
+}
+
+/*
+SendAsMail - prepares data and sends mail read from config
+*/
+func SendAsMail(filteredData [][]string) {
+	data, err := ioutil.ReadFile("config/system.yaml")
+	if err != nil {
+		log.Fatal(err)
+	}
+	c := &types.Config{}
+	if err := c.Parse(data); err != nil {
+		log.Fatal(err)
+	}
+	buf := bytes.Buffer{}
