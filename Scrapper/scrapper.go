@@ -178,3 +178,14 @@ func SendAsMail(filteredData [][]string) {
 		log.Fatal(err)
 	}
 	buf := bytes.Buffer{}
+	WriteAsTable(filteredData, &buf)
+	msg := buf.Bytes()
+	body := string(msg)
+	log.Printf("Converted Message %s \n", body)
+	msgSent := "From: " + c.Mail.From + "\n" +
+		"To: " + strings.Join(c.Mail.To, ",") + "\n" +
+		"Subject: " + "Daily Update from PI" + "\n\n" + body
+	c.Mail.Message = []byte(msgSent)
+	log.Printf("Received mail details : [%+v] \n", c)
+	communication.SendMail(c)
+}
