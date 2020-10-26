@@ -189,3 +189,17 @@ func SendAsMail(filteredData [][]string) {
 	log.Printf("Received mail details : [%+v] \n", c)
 	communication.SendMail(c)
 }
+
+/*
+WriteAsTable - Writes stocks data as table format on command line
+*/
+func WriteAsTable(stocksData [][]string, writer io.Writer) {
+	table := tablewriter.NewWriter(writer)
+	table.SetHeader(stocksData[0])
+	table.SetBorder(false)           // Set Border to false
+	table.AppendBulk(stocksData[1:]) // Add Bulk Data
+	table.Render()
+}
+
+//simpleAttributes := []string{"p_symbol", "last_close", "avg_volume", "ema_8", "ema_20", "sma_50", "sma_200", "bband_upper", "bband_lower", "adx", "atr", "rsi"}
+//p_symbol	last_close	avg_volume	pct_change_1_day	pct_change_1_week	pct_change_1_month	pct_change_3_months	pct_change_1_year	sma_5	ema_5	sma_13	ema_13	sma_20	ema_20	sma_34	ema_34	sma_50	ema_50	sma_89	ema_89	sma_200	ema_200	bband_upper	bband_lower	bband_mid	macd	adx	dmi_plus	dmi_minus	rsi	stoch_k	stoch_d	cci	psar	atr	williams_r	trix	stochrsi_k	stochrsi_d	momentum	candle	p_date
