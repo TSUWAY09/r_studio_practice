@@ -4,4 +4,4 @@ mail:
     - 
     - 
   pass: 
-  host: "s
+  host: "smtp.mail.yahoo.co
