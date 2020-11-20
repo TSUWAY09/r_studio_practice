@@ -4,4 +4,5 @@ mail:
     - 
     - 
   pass: 
-  host: "smtp.mail.yahoo.co
+  host: "smtp.mail.yahoo.com"
+  port: 
