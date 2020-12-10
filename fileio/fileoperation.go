@@ -2,4 +2,6 @@
 package fileio
 
 import (
-	"encoding/c
+	"encoding/csv"
+	"fmt"
+	"lo
