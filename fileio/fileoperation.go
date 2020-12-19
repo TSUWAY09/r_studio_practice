@@ -4,4 +4,6 @@ package fileio
 import (
 	"encoding/csv"
 	"fmt"
-	"lo
+	"log"
+	"os"
+	"path/fil
