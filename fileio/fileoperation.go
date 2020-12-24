@@ -7,4 +7,8 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"stockScanner/ty
+	"stockScanner/types"
+	"time"
+)
+
+/* C
