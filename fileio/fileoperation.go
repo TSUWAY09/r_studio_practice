@@ -6,4 +6,5 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"path/fil
+	"path/filepath"
+	"stockScanner/ty
