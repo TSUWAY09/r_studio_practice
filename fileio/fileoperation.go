@@ -11,4 +11,4 @@ import (
 	"time"
 )
 
-/* CreateCSVFile creates csv file and returns file pointe
+/* CreateCSVFile creates csv file and returns file pointer with current tim
