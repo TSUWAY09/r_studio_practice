@@ -11,4 +11,5 @@ import (
 	"time"
 )
 
-/* CreateCSVFile creates csv file and returns file pointer with current time as file name in the format 2006010
+/* CreateCSVFile creates csv file and returns file pointer with current time as file name in the format 20060102150405
+ * GO follo
