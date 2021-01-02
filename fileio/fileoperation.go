@@ -13,4 +13,5 @@ import (
 
 /* CreateCSVFile creates csv file and returns file pointer with current time as file name in the format 20060102150405
  * GO follows below constants for formatting of date
-	cons
+	const (
+    stdLo
