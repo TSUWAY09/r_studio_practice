@@ -15,4 +15,5 @@ import (
  * GO follows below constants for formatting of date
 	const (
     stdLongMonth      = "January"
-    stdMonth   
+    stdMonth          = "Jan"
+    std
