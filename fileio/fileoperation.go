@@ -16,4 +16,5 @@ import (
 	const (
     stdLongMonth      = "January"
     stdMonth          = "Jan"
-    std
+    stdNumMonth       = "1"
+ 
