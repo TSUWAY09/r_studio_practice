@@ -19,4 +19,5 @@ import (
     stdNumMonth       = "1"
     stdZeroMonth      = "01"
     stdLongWeekDay    = "Monday"
-    stdWeekDay        = 
+    stdWeekDay        = "Mon"
+    stdDay     
