@@ -21,4 +21,5 @@ import (
     stdLongWeekDay    = "Monday"
     stdWeekDay        = "Mon"
     stdDay            = "2"
-    stdUnderDay       
+    stdUnderDay       = "_2"
+    stdZeroDa
