@@ -23,4 +23,4 @@ import (
     stdDay            = "2"
     stdUnderDay       = "_2"
     stdZeroDay        = "02"
-    stdHo
+    stdHour           = "15
