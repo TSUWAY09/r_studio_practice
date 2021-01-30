@@ -25,4 +25,4 @@ import (
     stdZeroDay        = "02"
     stdHour           = "15"
     stdHour12         = "3"
-    st
+    stdZeroHour12     = 
