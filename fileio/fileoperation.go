@@ -27,4 +27,5 @@ import (
     stdHour12         = "3"
     stdZeroHour12     = "03"
     stdMinute         = "4"
-    st
+    stdZeroMinute     = "04"
+   
