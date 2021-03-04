@@ -30,4 +30,5 @@ import (
     stdZeroMinute     = "04"
     stdSecond         = "5"
     stdZeroSecond     = "05"
-    std
+    stdLongYear       = "2006"
+  
