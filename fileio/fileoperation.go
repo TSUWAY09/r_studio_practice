@@ -31,4 +31,4 @@ import (
     stdSecond         = "5"
     stdZeroSecond     = "05"
     stdLongYear       = "2006"
-  
+    stdYear    
