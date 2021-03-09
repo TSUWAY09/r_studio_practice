@@ -33,4 +33,4 @@ import (
     stdLongYear       = "2006"
     stdYear           = "06"
     stdPM             = "PM"
-    
+    stdpm             = "pm
