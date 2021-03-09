@@ -32,4 +32,5 @@ import (
     stdZeroSecond     = "05"
     stdLongYear       = "2006"
     stdYear           = "06"
-    stdPM           
+    stdPM             = "PM"
+    
