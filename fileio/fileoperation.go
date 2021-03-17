@@ -34,4 +34,5 @@ import (
     stdYear           = "06"
     stdPM             = "PM"
     stdpm             = "pm"
-    stdTZ        
+    stdTZ             = "MST"
+    std
