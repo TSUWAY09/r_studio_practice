@@ -35,4 +35,4 @@ import (
     stdPM             = "PM"
     stdpm             = "pm"
     stdTZ             = "MST"
-    stdISO8601TZ      
+    stdISO8601TZ      = "Z0700"  // prin
