@@ -37,4 +37,5 @@ import (
     stdTZ             = "MST"
     stdISO8601TZ      = "Z0700"  // prints Z for UTC
     stdISO8601ColonTZ = "Z07:00" // prints Z for UTC
-    stdNumTZ          = "-0700"  // alway
+    stdNumTZ          = "-0700"  // always numeric
+    stdNumS
