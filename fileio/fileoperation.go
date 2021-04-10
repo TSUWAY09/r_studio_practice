@@ -39,4 +39,5 @@ import (
     stdISO8601ColonTZ = "Z07:00" // prints Z for UTC
     stdNumTZ          = "-0700"  // always numeric
     stdNumShortTZ     = "-07"    // always numeric
-    stdNumColonTZ     = "-07:00" // a
+    stdNumColonTZ     = "-07:00" // always numeric
+)
