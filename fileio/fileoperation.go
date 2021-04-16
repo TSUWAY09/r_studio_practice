@@ -41,4 +41,4 @@ import (
     stdNumShortTZ     = "-07"    // always numeric
     stdNumColonTZ     = "-07:00" // always numeric
 )
-* stockScannerType
+* stockScannerType input parameter to
