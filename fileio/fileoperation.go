@@ -41,4 +41,4 @@ import (
     stdNumShortTZ     = "-07"    // always numeric
     stdNumColonTZ     = "-07:00" // always numeric
 )
-* stockScannerType input parameter to read whether sto
+* stockScannerType input parameter to read whether stock scanning option sel
