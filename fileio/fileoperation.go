@@ -41,4 +41,6 @@ import (
     stdNumShortTZ     = "-07"    // always numeric
     stdNumColonTZ     = "-07:00" // always numeric
 )
-* stockScannerType input parameter to read whether stock scanning option selected is bullish 
+* stockScannerType input parameter to read whether stock scanning option selected is bullish or bearish
+*/
+fun
