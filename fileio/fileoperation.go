@@ -43,4 +43,4 @@ import (
 )
 * stockScannerType input parameter to read whether stock scanning option selected is bullish or bearish
 */
-fun
+func CreateCSVFile(stockSc
