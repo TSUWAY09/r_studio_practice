@@ -46,4 +46,4 @@ import (
 func CreateCSVFile(stockScannerType int) (*os.File, error) {
 	log.Println("I am in create csv file")
 	currentTime := time.Now()
-	//timeValue := currentTime.
+	//timeValue := currentTime.Format("2017-0
