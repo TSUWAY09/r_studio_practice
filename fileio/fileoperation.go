@@ -47,4 +47,5 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 	log.Println("I am in create csv file")
 	currentTime := time.Now()
 	//timeValue := currentTime.Format("2017-08-21")
-	timeValue := currentTime.Format("200601
+	timeValue := currentTime.Format("20060102150405")
+	lo
