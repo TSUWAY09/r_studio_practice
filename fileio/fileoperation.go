@@ -48,4 +48,4 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 	currentTime := time.Now()
 	//timeValue := currentTime.Format("2017-08-21")
 	timeValue := currentTime.Format("20060102150405")
-	lo
+	log.Printf("Cu
