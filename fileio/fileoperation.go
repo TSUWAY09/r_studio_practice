@@ -49,4 +49,5 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 	//timeValue := currentTime.Format("2017-08-21")
 	timeValue := currentTime.Format("20060102150405")
 	log.Printf("Current time is %s \n", timeValue)
-	fileType := "Bull
+	fileType := "Bullish_"
+	if sto
