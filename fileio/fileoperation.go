@@ -51,4 +51,4 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 	log.Printf("Current time is %s \n", timeValue)
 	fileType := "Bullish_"
 	if stockScannerType == types.BEARISH {
-		fileTy
+		fileType = "Bearis
