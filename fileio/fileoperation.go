@@ -53,4 +53,4 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 	if stockScannerType == types.BEARISH {
 		fileType = "Bearish_"
 	}
-	path := "/home/bhanureddy/Docume
+	path := "/home/bhanureddy/Documents/" + fileType + 
