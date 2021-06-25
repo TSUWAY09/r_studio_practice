@@ -54,4 +54,4 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 		fileType = "Bearish_"
 	}
 	path := "/home/bhanureddy/Documents/" + fileType + timeValue + ".csv"
-	if err := 
+	if err := os.MkdirAll(file
