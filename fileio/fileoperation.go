@@ -55,4 +55,5 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 	}
 	path := "/home/bhanureddy/Documents/" + fileType + timeValue + ".csv"
 	if err := os.MkdirAll(filepath.Dir(path), 0777); err != nil {
-		log.Panic("Mentioned path is not ava
+		log.Panic("Mentioned path is not available")
+		return 
