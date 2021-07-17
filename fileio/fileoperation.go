@@ -58,3 +58,5 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 		log.Panic("Mentioned path is not available")
 		return nil, err
 	}
+
+	fp, err := os.Cr
