@@ -59,4 +59,5 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 		return nil, err
 	}
 
-	fp, err := os.Cr
+	fp, err := os.Create(path)
+	if er
