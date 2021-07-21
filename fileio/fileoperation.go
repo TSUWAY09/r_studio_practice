@@ -61,4 +61,4 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 
 	fp, err := os.Create(path)
 	if err != nil {
-		log.Panic("error whi
+		log.Panic("error while creating file"
