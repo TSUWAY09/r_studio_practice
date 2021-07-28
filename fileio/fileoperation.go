@@ -65,3 +65,7 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 		return nil, err
 	}
 	return fp, nil
+}
+
+/*
+* WriteC
