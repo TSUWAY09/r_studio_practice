@@ -68,4 +68,4 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 }
 
 /*
-* WriteC
+* WriteCSVFile writes to cs
