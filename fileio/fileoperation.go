@@ -68,4 +68,5 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 }
 
 /*
-* WriteCSVFile writes to csv file with given string slice as 
+* WriteCSVFile writes to csv file with given string slice as input
+* retur
