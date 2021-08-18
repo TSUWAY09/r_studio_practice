@@ -69,4 +69,4 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 
 /*
 * WriteCSVFile writes to csv file with given string slice as input
-* return error if there is any while openin
+* return error if there is any while opening file or writin
