@@ -72,4 +72,5 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
 * return error if there is any while opening file or writing data to file
 * return nil if write operation is successful
  */
-func WriteCSVFile(fp *os.File, data [][]string) error 
+func WriteCSVFile(fp *os.File, data [][]string) error {
+	/*log.Printf
