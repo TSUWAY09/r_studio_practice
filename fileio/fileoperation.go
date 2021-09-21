@@ -74,4 +74,4 @@ func CreateCSVFile(stockScannerType int) (*os.File, error) {
  */
 func WriteCSVFile(fp *os.File, data [][]string) error {
 	/*log.Printf("Received data to write to csv is %#v \n", data)*/
-	log.Println("Wro
+	log.Println("Wrote data to ", 
