@@ -77,4 +77,4 @@ func WriteCSVFile(fp *os.File, data [][]string) error {
 	log.Println("Wrote data to ", fp.Name())
 	file, err := os.OpenFile(fp.Name(), os.O_CREATE|os.O_WRONLY, 0777)
 	if err != nil {
-		log.Panic("not able 
+		log.Panic("not able to open file :" + fi
