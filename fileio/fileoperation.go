@@ -80,4 +80,4 @@ func WriteCSVFile(fp *os.File, data [][]string) error {
 		log.Panic("not able to open file :" + file.Name())
 		return err
 	}
-	csvWriter
+	csvWriter := csv.New
