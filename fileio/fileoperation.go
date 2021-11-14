@@ -81,4 +81,4 @@ func WriteCSVFile(fp *os.File, data [][]string) error {
 		return err
 	}
 	csvWriter := csv.NewWriter(file)
-	err 
+	err = csvWriter.WriteA
