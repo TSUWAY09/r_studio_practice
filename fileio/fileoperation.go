@@ -83,4 +83,4 @@ func WriteCSVFile(fp *os.File, data [][]string) error {
 	csvWriter := csv.NewWriter(file)
 	err = csvWriter.WriteAll(data)
 	if err != nil {
-		log.Panic
+		log.Panic("Not able to write dat
