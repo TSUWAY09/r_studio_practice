@@ -86,4 +86,4 @@ func WriteCSVFile(fp *os.File, data [][]string) error {
 		log.Panic("Not able to write data to file : " + file.Name())
 		return err
 	}
-	fmt.Print("****************************DONE***********
+	fmt.Print("****************************DONE****************************
