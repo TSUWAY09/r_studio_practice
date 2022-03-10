@@ -42,3 +42,30 @@ func GetStockScannerType(args []string) int {
  * GetCommandLineOptions takes all command line arguments as input
  * returns all the options chosen
  */
+func GetCommandLineOptions(args []string) []string {
+	var options []string
+
+	for _, arg := range args {
+
+		if strings.HasPrefix(arg, "-") {
+			choice := strings.ReplaceAll(arg, "-", "")
+			options = append(options, strings.Split(choice, "")...)
+		}
+	}
+
+	log.Printf("options received are %+v \n", options)
+	return options
+}
+
+/*
+ConstructArgsMap - constructs a map with key as option and value as value from
+command line arguments
+*/
+func ConstructArgsMap(args []string) map[string]string {
+	argValues := make(map[string]string)
+
+	for ind, arg := range args {
+
+		if strings.HasPrefix(arg, "-") {
+			choice := strings.ReplaceAll(arg, "-", "")
+			if !(len(args) <= ind+1) && !strings.HasPrefix(args[ind+1], "-") {
