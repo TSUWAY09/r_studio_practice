@@ -27,3 +27,18 @@ func ReplaceUnnecessaryHtmlData(eg html.Token) string {
 * accordingly types.BEARISH/ types.BULLISH will be returned if none is present or no option is selected then
 * types.BULLISH will be selected by default
  */
+func GetStockScannerType(args []string) int {
+	//checks if given argument contains t then reads next stock option
+	if strings.Contains(args[0], "t") {
+		log.Printf("ouptut stock scanner type is selected")
+		if strings.EqualFold(args[1], "Bearish") {
+			return types.BEARISH
+		}
+	}
+	return types.BULLISH
+}
+
+/*
+ * GetCommandLineOptions takes all command line arguments as input
+ * returns all the options chosen
+ */
