@@ -89,3 +89,29 @@ func ValidateCommandLineOptions(options []string) bool {
 
 	return true
 }
+
+/* FilterSimpleTechnicalValues filters output with only simple attribute values
+ * INPUT : [][]string slice
+ * OUTPUT : [][]string slice
+ */
+func FilterSimpleTechnicalValues(input [][]string) [][]string {
+	output := make([][]string, 0)                          // create filtered output placeholder
+	header := input[0]                                     // assign first row i.e header to compare against desired values
+	columnsToBeIncluded := getIndexNumbersToFilter(header) // receives row index values which are to be included in filtered output
+	sort.Ints(columnsToBeIncluded)
+	for _, row := range input {
+		filteredRow := make([]string, 0)
+		for _, valIdx := range columnsToBeIncluded { // iterate over columns to be included from original data
+			filteredRow = append(filteredRow, row[valIdx])
+		}
+		output = append(output, filteredRow)
+	}
+	return output
+}
+
+/*
+ * getIndexNumbersToFilter returns all index numbers of fields matching simpleAttributes defined in this function
+ * INPUT: slice string
+ * OUTPUT: slice of intergers
+ */
+func getIndexNumbersToFilter(header []string) []int {
