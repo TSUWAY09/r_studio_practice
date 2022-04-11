@@ -115,3 +115,20 @@ func FilterSimpleTechnicalValues(input [][]string) [][]string {
  * OUTPUT: slice of intergers
  */
 func getIndexNumbersToFilter(header []string) []int {
+	var idxNums []int
+	// predefined slice of header values which are to be included in simple output option
+	simpleAttributes := []string{"p_symbol", "last_close", "avg_volume", "ema_8", "ema_20", "sma_50", "sma_200", "bband_upper", "bband_lower", "adx", "atr", "rsi"}
+	for idx, headerValue := range header {
+		if ok := IsValuePresentInStringSlice(headerValue, simpleAttributes); ok {
+			idxNums = append(idxNums, idx) // prepare list of index numbers which are to be included
+		}
+	}
+	return idxNums
+}
+
+/* IsValuePresentInStringSlice checks if string value present in given string slice
+ * INPUT: value string, slice string
+ * OUTPUT: boolean value
+ */
+func IsValuePresentInStringSlice(value string, list []string) bool {
+	for _, element := range list {
