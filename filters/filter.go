@@ -132,3 +132,9 @@ func getIndexNumbersToFilter(header []string) []int {
  */
 func IsValuePresentInStringSlice(value string, list []string) bool {
 	for _, element := range list {
+		if ok := strings.EqualFold(value, element); ok {
+			return true
+		}
+	}
+	return false
+}
