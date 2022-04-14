@@ -1,1 +1,3 @@
-module stoc
+module stockScanner
+
+go 1.13
