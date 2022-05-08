@@ -4,4 +4,4 @@ go 1.13
 
 require (
 	github.com/Delta456/box-cli-maker/v2 v2.2.2
-	github.com/olekuko
+	github.com/olekukonko/tablewriter v0.0.5
