@@ -6,4 +6,4 @@ require (
 	github.com/Delta456/box-cli-maker/v2 v2.2.2
 	github.com/olekukonko/tablewriter v0.0.5
 	go.uber.org/zap v1.20.0
-	golang.
+	golang.org/x/net v0.0.0-20210
