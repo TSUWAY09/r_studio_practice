@@ -4,4 +4,7 @@ import (
 	"log"
 	"os"
 	"stockScanner/Scrapper"
-	"stockSc
+	"stockScanner/filters"
+)
+
+/*
