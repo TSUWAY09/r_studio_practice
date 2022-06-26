@@ -3,4 +3,5 @@ package main
 import (
 	"log"
 	"os"
-	"stockScanner/S
+	"stockScanner/Scrapper"
+	"stockSc
