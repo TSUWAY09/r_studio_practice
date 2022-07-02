@@ -8,4 +8,4 @@ import (
 )
 
 /*
- * command line appl
+ * command line application for generatin
