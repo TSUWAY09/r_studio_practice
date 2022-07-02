@@ -8,4 +8,4 @@ import (
 )
 
 /*
- * command line application for generatin
+ * command line application for generating bullish/bearis
