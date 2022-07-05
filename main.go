@@ -8,4 +8,6 @@ import (
 )
 
 /*
- * command line application for generating bullish/bearis
+ * command line application for generating bullish/bearish stocks
+ */
+func m
