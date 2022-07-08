@@ -10,4 +10,5 @@ import (
 /*
  * command line application for generating bullish/bearish stocks
  */
-func m
+func main() {
+	// Read command 
