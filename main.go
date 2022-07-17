@@ -12,4 +12,4 @@ import (
  */
 func main() {
 	// Read command line arguments
-	arg
+	argsWithoutProg := o
