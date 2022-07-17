@@ -12,4 +12,5 @@ import (
  */
 func main() {
 	// Read command line arguments
-	argsWithoutProg := o
+	argsWithoutProg := os.Args[1:]
+	allOptions :
