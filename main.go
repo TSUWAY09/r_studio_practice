@@ -13,4 +13,4 @@ import (
 func main() {
 	// Read command line arguments
 	argsWithoutProg := os.Args[1:]
-	allOptions :
+	allOptions := filters.GetCommandL
