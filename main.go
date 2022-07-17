@@ -11,4 +11,5 @@ import (
  * command line application for generating bullish/bearish stocks
  */
 func main() {
-	// Read command 
+	// Read command line arguments
+	arg
