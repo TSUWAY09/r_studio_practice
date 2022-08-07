@@ -15,4 +15,4 @@ func main() {
 	argsWithoutProg := os.Args[1:]
 	allOptions := filters.GetCommandLineOptions(argsWithoutProg)
 	log.Printf("All options received : %+v \n", allOptions)
-	if ok := filters.ValidateComm
+	if ok := filters.ValidateCommandLineOptions(allOp
