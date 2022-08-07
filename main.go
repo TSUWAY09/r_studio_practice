@@ -14,4 +14,4 @@ func main() {
 	// Read command line arguments
 	argsWithoutProg := os.Args[1:]
 	allOptions := filters.GetCommandLineOptions(argsWithoutProg)
-	log.Printf("All options received :
+	log.Printf("All options received : %+v \n", allOptio
