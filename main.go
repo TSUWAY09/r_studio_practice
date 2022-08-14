@@ -16,4 +16,4 @@ func main() {
 	allOptions := filters.GetCommandLineOptions(argsWithoutProg)
 	log.Printf("All options received : %+v \n", allOptions)
 	if ok := filters.ValidateCommandLineOptions(allOptions); !ok {
-		log.Printf("va
+		log.Printf("validation failed p
