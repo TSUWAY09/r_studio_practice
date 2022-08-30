@@ -18,4 +18,4 @@ func main() {
 	if ok := filters.ValidateCommandLineOptions(allOptions); !ok {
 		log.Printf("validation failed please revisit options provided")
 	} else {
-		//log.Printf("all a
+		//log.Printf("all arguments %#v
