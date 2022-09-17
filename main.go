@@ -19,4 +19,5 @@ func main() {
 		log.Printf("validation failed please revisit options provided")
 	} else {
 		//log.Printf("all arguments %#v \n", argsWithProg)
-		//log.Printf("arguments with program name %#v \n",
+		//log.Printf("arguments with program name %#v \n", argsWithoutProg)
+		
