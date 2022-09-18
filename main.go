@@ -21,3 +21,5 @@ func main() {
 		//log.Printf("all arguments %#v \n", argsWithProg)
 		//log.Printf("arguments with program name %#v \n", argsWithoutProg)
 		Scrapper.ScrapeContent(argsWithoutProg, allOptions)
+	}
+}
