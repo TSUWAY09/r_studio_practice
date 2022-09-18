@@ -20,4 +20,4 @@ func main() {
 	} else {
 		//log.Printf("all arguments %#v \n", argsWithProg)
 		//log.Printf("arguments with program name %#v \n", argsWithoutProg)
-		Scrapper.ScrapeConten
+		Scrapper.ScrapeContent(argsWith
