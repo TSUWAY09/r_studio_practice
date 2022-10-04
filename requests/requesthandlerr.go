@@ -1,4 +1,6 @@
 // requests provides making requests to other API's or http requests
 package requests
 
-import 
+import (
+	"io/ioutil"
+	"lo
