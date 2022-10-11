@@ -9,4 +9,4 @@ import (
 )
 
 /*
- * CreateAPIRequestAndGetResponse creates
+ * CreateAPIRequestAndGetResponse creates request with 
