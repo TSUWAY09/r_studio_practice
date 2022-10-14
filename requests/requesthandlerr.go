@@ -9,4 +9,5 @@ import (
 )
 
 /*
- * CreateAPIRequestAndGetResponse creates request with params encoded, converts response from request to st
+ * CreateAPIRequestAndGetResponse creates request with params encoded, converts response from request to string
+ * returns 
