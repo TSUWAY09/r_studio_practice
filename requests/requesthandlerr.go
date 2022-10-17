@@ -10,4 +10,6 @@ import (
 
 /*
  * CreateAPIRequestAndGetResponse creates request with params encoded, converts response from request to string
- * returns error and string output of r
+ * returns error and string output of response
+ */
+func Create
