@@ -12,4 +12,5 @@ import (
  * CreateAPIRequestAndGetResponse creates request with params encoded, converts response from request to string
  * returns error and string output of response
  */
-func CreateAPIRequestAndGetResponse(value string, client *http.Client) (er
+func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, string) {
+	
