@@ -13,4 +13,5 @@ import (
  * returns error and string output of response
  */
 func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, string) {
-	// Create and modify HTTP reques
+	// Create and modify HTTP request before sending
+	
