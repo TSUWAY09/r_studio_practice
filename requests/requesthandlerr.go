@@ -14,4 +14,4 @@ import (
  */
 func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, string) {
 	// Create and modify HTTP request before sending
-	request, err := http.NewRequest("POST", "https://www.icharts.in
+	request, err := http.NewRequest("POST", "https://www.icharts.in/includes/screene
