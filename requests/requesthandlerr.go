@@ -16,4 +16,6 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	// Create and modify HTTP request before sending
 	request, err := http.NewRequest("POST", "https://www.icharts.in/includes/screener/EODScan.php", strings.NewReader(value))
 	if err != nil {
-		log.Fatal(err
+		log.Fatal(err)
+	}
+	request.Head
