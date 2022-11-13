@@ -18,4 +18,4 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	if err != nil {
 		log.Fatal(err)
 	}
-	request.Head
+	request.Header.Set("User-A
