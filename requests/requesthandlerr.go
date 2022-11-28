@@ -19,4 +19,4 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 		log.Fatal(err)
 	}
 	request.Header.Set("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36")
-	requ
+	request.Header.Set("Ac
