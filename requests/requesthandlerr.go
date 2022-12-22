@@ -22,4 +22,5 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	request.Header.Set("Accept-Language", "en-IN")
 	request.Header.Set("Sec-Fetch-Site", "same-origin")
 	request.Header.Set("Sec-Fetch-Mode", "cors")
-	request.Header.Set("Sec-Fetch-Dest", "empty
+	request.Header.Set("Sec-Fetch-Dest", "empty")
+	request.Header
