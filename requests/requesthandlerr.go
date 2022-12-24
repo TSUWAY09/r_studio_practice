@@ -24,3 +24,4 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	request.Header.Set("Sec-Fetch-Mode", "cors")
 	request.Header.Set("Sec-Fetch-Dest", "empty")
 	request.Header.Set("Connection", "keep-alive")
+	request.Header.Set
