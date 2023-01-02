@@ -25,4 +25,5 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	request.Header.Set("Sec-Fetch-Dest", "empty")
 	request.Header.Set("Connection", "keep-alive")
 	request.Header.Set("Content-Length", "77")
-	request.Header.Set("X-Prototype-Version", "
+	request.Header.Set("X-Prototype-Version", "1.6.0.2")
+	re
