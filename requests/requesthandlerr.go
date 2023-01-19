@@ -28,3 +28,4 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	request.Header.Set("X-Prototype-Version", "1.6.0.2")
 	request.Header.Set("X-Requested-With", "XMLHttpRequest")
 	request.Header.Set("Accept-Encoding", "br, gzip, deflate")
+	request.Header.
