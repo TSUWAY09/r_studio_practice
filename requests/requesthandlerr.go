@@ -30,4 +30,4 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	request.Header.Set("Accept-Encoding", "br, gzip, deflate")
 	request.Header.Set("Accept", "test/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
 	request.Header.Set("Referer", "https://www.icharts.in/screener-eod.html")
-	request.Header.Set("Content-type", "applica
+	request.Header.Set("Content-type", "application/x-www-fo
