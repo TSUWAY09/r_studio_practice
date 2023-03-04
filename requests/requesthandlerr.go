@@ -31,4 +31,4 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	request.Header.Set("Accept", "test/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
 	request.Header.Set("Referer", "https://www.icharts.in/screener-eod.html")
 	request.Header.Set("Content-type", "application/x-www-form-urlencoded; charset=UTF-8")
-	request.Header.Set("Cookie", "__auc=de511acc174ab5077e9fdc45c58; __gads=ID=6614628d09480cf1:T=1600602042:S=ALNI_Ma7uQM537PiSjHCc-HJNkMjuCvB_g; __asc=8175300b174ac7e276e7f8e6040; __utma=192083122.261844769.1600602012.1600607119.1600621783.3; __u
+	request.Header.Set("Cookie", "__auc=de511acc174ab5077e9fdc45c58; __gads=ID=6614628d09480cf1:T=1600602042:S=ALNI_Ma7uQM537PiSjHCc-HJNkMjuCvB_g; __asc=8175300b174ac7e276e7f8e6040; __utma=192083122.261844769.1600602012.1600607119.1600621783.3; __utmc=192083122; __utm
