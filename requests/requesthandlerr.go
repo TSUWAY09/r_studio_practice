@@ -34,4 +34,5 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	request.Header.Set("Cookie", "__auc=de511acc174ab5077e9fdc45c58; __gads=ID=6614628d09480cf1:T=1600602042:S=ALNI_Ma7uQM537PiSjHCc-HJNkMjuCvB_g; __asc=8175300b174ac7e276e7f8e6040; __utma=192083122.261844769.1600602012.1600607119.1600621783.3; __utmc=192083122; __utmz=192083122.1600621783.3.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); 0067889d30b7196cce14886855b1891a=10b2fd9745da54f7ed09c1d97cc59222; __utmb=192083122.2.10.1600621783; PHPSESSID=sc09fnbppc3qe2cfcerair9562")
 
 	// Make request
-	response, err 
+	response, err := client.Do(request)
+	i
