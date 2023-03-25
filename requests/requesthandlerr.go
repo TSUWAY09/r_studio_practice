@@ -35,4 +35,4 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 
 	// Make request
 	response, err := client.Do(request)
-	i
+	if err != nil
