@@ -38,4 +38,6 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer response.Body.Close(
+	defer response.Body.Close()
+
+	data1, err
