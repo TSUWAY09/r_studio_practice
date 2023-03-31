@@ -40,4 +40,4 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	}
 	defer response.Body.Close()
 
-	data1, err := ioutil.ReadAll(r
+	data1, err := ioutil.ReadAll(response
