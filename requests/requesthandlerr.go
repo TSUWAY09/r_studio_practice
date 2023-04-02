@@ -41,4 +41,5 @@ func CreateAPIRequestAndGetResponse(value string, client *http.Client) (error, s
 	defer response.Body.Close()
 
 	data1, err := ioutil.ReadAll(response.Body)
-	htmlOutput := strin
+	htmlOutput := string(data1)
+	return
